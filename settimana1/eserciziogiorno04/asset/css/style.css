@@ -1,57 +1,90 @@
 body {
     font-family: 'Poppins', sans-serif;
-   background-image: url(../img/sfondo.png);
-   background-attachment: fixed;
+    background-image: url(../img/sfondo.png);
+    background-attachment: fixed;
 }
 
 header {
-    border: 2px solid;
+
     background-color: #3f6bca;
-   }
+    text-align: center;
+    color: white;
+}
 
-   #autore {
+header nav li {
+    list-style: none;
+
+}
+
+
+
+header nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+hr {display: none;} /* rimuove l'elemento */
+
+#autore {
     color: #a0a0a0;
-   }
+}
 
 
-   table {
-    border-bottom: 2px solid blue;
-   }
+table {
+    border-bottom: 0px solid blue;
+    border-collapse:collapse;
 
-   thead {
-    border: 2px solid;
-    background-color: #3f6bca ;
-   }
 
-   tr {
-    border: 1px solid;
+}
+
+thead {
+    border: 0px solid;
+    background-color: #3f6bca;
+
+}
+
+tr {
+    border: 0px solid;
     border-color: #f3f3f3;
-   
-   }
+}
 
-   main {
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+
+main {
     border: 1px medium solid;
     background-color: white;
-   }
+    padding: 5px;
+    box-shadow: 0 3px 3px black;
+}
 
-   .articoli,div {
+aside div {
     border: 2px solid;
     background-color: #a0a0a0;
-   }
+}
 
-   footer {
+footer {
     border: 2px solid;
-    background-color:#00A0C6 ;
-   }
+    background-color: #00A0C6;
+    box-shadow: 0 3px 3px black;
+}
 
-   fieldset {
+fieldset {
     border: 2px solid;
     background-color: #a0a0a0;
-   }
+    box-shadow: 0 3px 3px black;
+}
 
 
-   .corpo,b {
-    border:1px solid  grey ;
+.corpo,
+b {
+    border: 1px solid grey;
     background-color: #a0a0a0;
-   }
+    box-shadow: 0 3px 3px black;
+}
 
+footer a {
+    color: fuchsia;
+}
