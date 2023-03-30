@@ -1,3 +1,57 @@
 body {
-    background-color: blue;
+    font-family: 'Poppins', sans-serif;
+   background-image: url(../img/sfondo.png);
+   background-attachment: fixed;
 }
+
+header {
+    border: 2px solid;
+    background-color: #3f6bca;
+   }
+
+   #autore {
+    color: #a0a0a0;
+   }
+
+
+   table {
+    border-bottom: 2px solid blue;
+   }
+
+   thead {
+    border: 2px solid;
+    background-color: #3f6bca ;
+   }
+
+   tr {
+    border: 1px solid;
+    border-color: #f3f3f3;
+   
+   }
+
+   main {
+    border: 1px medium solid;
+    background-color: white;
+   }
+
+   .articoli,div {
+    border: 2px solid;
+    background-color: #a0a0a0;
+   }
+
+   footer {
+    border: 2px solid;
+    background-color:#00A0C6 ;
+   }
+
+   fieldset {
+    border: 2px solid;
+    background-color: #a0a0a0;
+   }
+
+
+   .corpo,b {
+    border:1px solid  grey ;
+    background-color: #a0a0a0;
+   }
+
