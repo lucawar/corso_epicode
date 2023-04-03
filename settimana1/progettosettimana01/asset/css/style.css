@@ -12,9 +12,10 @@
     
 header {
     background-color:black;
-    padding: 30px;
+    padding-top: 200px;
     margin: 0;
     width: 100%;
+    ;
    }
 
  h1,h3,h2 {
@@ -56,7 +57,9 @@ button {
     width: 100%;
     height: 300px;
     background-size: cover;
-    background-image: url(../img/banner.jpg)
+    background-image: url(../img/banner.jpg);
+    padding:3em
+    
      }
 
 
@@ -90,4 +93,11 @@ hr {
 
 #foto{
 width: 100%;
+}
+
+#fotorotonda{
+    border:solid 2px;
+    background-image:url(../img/notebook.jpg);
+    background-size: cover;
+    padding-top: 100px;
 }
