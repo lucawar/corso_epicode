@@ -1,6 +1,9 @@
-document.getElementById('prima riga').innerHTML = 'output scritto da Javascript';
-document.getElementById('seconda riga').innerHTML = 'pantera scritto da javascript';
+document.getElementById('titolo').innerHTML ='Iniziamo la nostra pratica!';
+
+var animale = 'pantera'
+document.write('<p id="seconda riga">' + animale +  'scritto da javascript</p>');
+
+document.getElementById('prima riga').innerHTML = 'output scritto da javascript';
 
 
 
-document.write('CIAO A TUTTI <h3>');

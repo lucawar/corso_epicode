@@ -3,12 +3,26 @@
 body {
     background-color: #415fe1;
     font-family: "Roboto";
-    font-size: xx-large;
-    margin-left: 400px;
+    font-size: x-large;
+    color:white;
+    padding: 0;
+    }
+
+#contenitore2 {
+    margin-left: 200px;
 }
 
 
-#img:hover {
+img {
+    width: 20%;
+}
+
+
+a:hover {
     text-decoration: none;
     color:black
+}
+a:link, a:visited{
+    text-decoration: none;
+    color: #fff;
 }

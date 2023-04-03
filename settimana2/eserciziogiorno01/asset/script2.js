@@ -1,6 +1,9 @@
 window.alert('DAJEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE');
 alert('ECCOCIIIIIIIIIIIIIIIIIIIIIIIIIIIIII');
 
-console.log('amatriciana');
-console.log('carbonara');
-console.log('cacio e pepe');
+var piatto = 'amatriciana'
+console.log('piatto');
+var piatto2= 'carbonara'
+console.log('piatto2');
+var piatto = 'cacio e pepe'
+console.log('piatto3');
