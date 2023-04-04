@@ -24,7 +24,6 @@ REGOLE
 */
 
 var nome = 'Luca';
-nome = 'Guerra';   //ESERCIZIO 5: Ho riassegnato un nuovo nome alla variante nome.
 console.log(nome)
 document.getElementById ('nome').innerHTML= nome;
 
@@ -32,10 +31,10 @@ document.getElementById ('nome').innerHTML= nome;
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
-
-document.getElementById ('addizione').innerHTML= x + 20;  
-var y = x + 20;                                                                   //non riesco a capire perchè mi da NaN, nell'esercizio della sottrazione,la formula, funziona, con l addizione no :(
-console.log(y)
+var x = 12;
+var somma = x + 20;    
+document.getElementById ('addizione').innerHTML= somma;                                                                
+console.log(somma)
 
 
 
@@ -43,7 +42,7 @@ console.log(y)
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 
-var x = 12;
+x = 12;
 console.log(x)
 
 
@@ -53,6 +52,9 @@ console.log(x)
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
+
+nome = 'Guerra'; 
+document.getElementById ('nome').innerHTML= nome;
 const lillo = 'lillo';
        // il valore di lillo non può essere cambiato in quanto è una constante, infatti risulterebbe un errore nel DOM e nella console nel caso provassimo a cambiarlo.
 console.log(lillo)    
@@ -64,8 +66,8 @@ console.log(lillo)
 */
 
 document.getElementById ('sottrazione').innerHTML= x - 4;
-var z = x - 4;
-console.log(z)
+var sottrazione = x - 4;
+console.log(sottrazione)
 
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
@@ -80,7 +82,21 @@ var nome2 = 'Jhon';
 console.log(nome2)
 document.getElementById ('nome2').innerHTML= nome2;
 
+var verifica1=false;
+if (nome1 == nome2)
+{
+  verifica1 = true ;
+}
 
-document.getElementById ('nome1verifica').innerHTML= nome1 === nome2;
-var verifica = nome2.toLowerCase();
-document.getElementById ('nome2verifica').innerHTML= nome1 === verifica;
+document.getElementById ('nome1verifica').innerHTML= verifica1;
+
+
+
+
+var verifica2 = false;
+ if  (nome2.toLowerCase() == nome1){
+  verifica2 = true;
+}
+
+document.getElementById ('nome2verifica').innerHTML= verifica2;
+console.log (nome2)
