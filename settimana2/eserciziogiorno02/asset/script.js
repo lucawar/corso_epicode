@@ -34,7 +34,7 @@ document.getElementById ('nome').innerHTML= nome;
 */
 
 document.getElementById ('addizione').innerHTML= x + 20;  
-var y = x + 20;                                                                   //non riesco a capire perchè mi da NaN, nell'esercizio  della sottrazione funziona, con l addizione no :(
+var y = x + 20;                                                                   //non riesco a capire perchè mi da NaN, nell'esercizio della sottrazione,la formula, funziona, con l addizione no :(
 console.log(y)
 
 

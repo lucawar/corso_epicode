@@ -3,3 +3,12 @@ body{
  text-align: center;
  font-size: xx-large;
  }
+
+
+ h1 {
+    color: darkred;
+    border: 2px solid black;
+    margin: 200px;
+    background-color: white;
+    border-radius: 30px;
+ }
