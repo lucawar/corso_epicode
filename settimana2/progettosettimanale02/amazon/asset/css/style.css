@@ -94,3 +94,9 @@ footer {
 #sezione{
     text-align: center;
 }
+
+#immagine2 {
+    background-image: url(../img/img_9.png);
+    background-size: cover;
+    width:100% ;
+}
