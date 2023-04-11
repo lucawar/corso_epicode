@@ -133,8 +133,14 @@ console.log(esito);
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
-function reverseString(str)
-let inverti;
+
+const reverseString = function (str) {
+	let splitString = str.split('');
+	let reverseString = splitString.reverse();
+	let finalString = reverseString.join('');
+	return finalString;
+};
+    console.log(reverseString('EPICODE'));
 
 
 /* ESERCIZIO 8
@@ -142,17 +148,37 @@ let inverti;
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const upperFirstPhrase = function (str) {
+	let words = str.split(' ');
+	let finalString = [];
+	for (let i = 0; i < words.length; i++) {
+		let firstChar = words[i].charAt(0);
+		let uppercaseChar = firstChar.toUpperCase();
+		let cutString = words[i].slice(1);
+		let finalWord = uppercaseChar + cutString;
+		finalString.push(finalWord);
+	}
+	console.log(finalString.join(' '));
+};
+
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+const cutString = function (str) {
+	return str.slice(1, str.length - 1);
+};
+console.log(cutString('EPICODE'));
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const giveMeRandom = function (n) {
+	const arr = [];
+	for (let i = 0; i < n; i++) {
+		arr.push(Math.floor(Math.random() * 10));
+	}
+	return arr;
+};
+console.log(giveMeRandom(5));
