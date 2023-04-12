@@ -10,6 +10,8 @@ REGOLE
 /* ESERCIZIO 1
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato..
 */
+
+
 //definizione funzione
 function area(l1, l2) {
     return l1 * l2;
