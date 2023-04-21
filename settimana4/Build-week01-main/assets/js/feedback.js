@@ -1,5 +1,5 @@
-window.addEventListener('load', function() {
-    if(localStorage.getItem('tofeedback') != 1) {
+window.addEventListener('load', function () {
+    if (localStorage.getItem('tofeedback') != 1) {
         location.href = '../../index.html';
     }
 })

@@ -99,25 +99,25 @@ const questions = [
 ];
 
 //variabili
-window.addEventListener('load', function(){
-    if(localStorage.getItem('accesso') != 1) {
-       location.href = '../../index.html';
+window.addEventListener('load', function () {
+    if (localStorage.getItem('accesso') != 1) {
+        location.href = '../../index.html';
     }
 })
 
-var domanda
-var successi = 0
-var indiceDomanda = 0
-var indiceArray = 0
-var indicequestions = 0
-var index = 0
-const arrayRandomDomande = []
-const arrayRandomIndici = []
-const arrayRandomRisposte = []
-var elementA = document.getElementById('a')
-var elementB = document.getElementById('b')
-var elementC = document.getElementById('c')
-var elementD = document.getElementById('d')
+var domanda;
+var successi = 0;
+var indiceDomanda = 0;
+var indiceArray = 0;
+var indicequestions = 0;
+var index = 0;
+const arrayRandomDomande = [];
+const arrayRandomIndici = [];
+const arrayRandomRisposte = [];
+var elementA = document.getElementById('a');
+var elementB = document.getElementById('b');
+var elementC = document.getElementById('c');
+var elementD = document.getElementById('d');
 
 const timeS = document.querySelector('aside');
 let timeSeconds = 30;
@@ -139,20 +139,20 @@ let countDown = setInterval(() => {
 
 
 //richiamo funzioni
-arrayDomande()
+arrayDomande();
 //indicizzazione()
-quiz()
+quiz();
 function quiz() {
-    avanzamento() // avanzamento dell'indice domanda 
-    svuotaRisposte() // svuota array risposte
-    svuotaDomande()
-    rispRandom() // genera risposte
-    DomRandom()
-    inserisciTesto() // scrivi domande e risposte
-    progressi()
-    boolean() // adatta se booleano
-    avanzamento() // avanzamento dell'indice domanda 
-    fine()// vai a pagina 3
+    avanzamento(); // avanzamento dell'indice domanda 
+    svuotaRisposte(); // svuota array risposte
+    svuotaDomande();
+    rispRandom(); // genera risposte
+    DomRandom();
+    inserisciTesto(); // scrivi domande e risposte
+    progressi();
+    boolean(); // adatta se booleano
+    avanzamento(); // avanzamento dell'indice domanda 
+    fine();// vai a pagina 3
     timeSeconds = 31;
 }
 
@@ -171,8 +171,8 @@ function arrayDomande() {
             i = i - 1;
         }
     }
-    index = 0
-    console.log(arrayRandomIndici)
+    index = 0;
+    console.log(arrayRandomIndici);
 }
 /*
 function arrayDomande() {
@@ -189,32 +189,31 @@ function arrayDomande() {
 }
 */
 function rispRandom() {
-    arrayRandomRisposte.push(questions[indicequestions].correct_answer)
+    arrayRandomRisposte.push(questions[indicequestions].correct_answer);
     for (k = 0; k < questions[indicequestions].incorrect_answers.length; k++) {
         arrayRandomRisposte.push(questions[indicequestions].incorrect_answers[k]);
     }
     arrayRandomRisposte.sort();
-    console.log('risposte')
-    console.log(arrayRandomRisposte)
-    console.log(indicequestions)
+    console.log('risposte');
+    console.log(arrayRandomRisposte);
+    console.log(indicequestions);
 }
 
 function DomRandom() {
-    arrayRandomDomande.push(questions[indicequestions].question)
+    arrayRandomDomande.push(questions[indicequestions].question);
 
-
-    console.log('domande')
-    console.log(arrayRandomDomande)
-    console.log(indicequestions)
+    console.log('domande');
+    console.log(arrayRandomDomande);
+    console.log(indicequestions);
 }
 
 function avanzamento() {
-    indicequestions = arrayRandomIndici[indiceArray]
-    console.log(indicequestions)
+    indicequestions = arrayRandomIndici[indiceArray];
+    console.log(indicequestions);
 }
 
 function inserisciTesto() {
-    document.getElementById('domanda').innerHTML = arrayRandomDomande[indiceArray]
+    document.getElementById('domanda').innerHTML = arrayRandomDomande[indiceArray];
     elementA.innerHTML = arrayRandomRisposte[0];
     elementB.innerHTML = arrayRandomRisposte[1];
     elementC.innerHTML = arrayRandomRisposte[2];
@@ -233,23 +232,23 @@ function boolean() {
 
 function svuotaRisposte() {
     for (k = 0; k < arrayRandomRisposte.length + 2; k++)
-        arrayRandomRisposte.pop()
+        arrayRandomRisposte.pop();
 }
 
 function svuotaDomande() {
     for (k = 0; k < arrayRandomDomande.length + 2; k++)
-        arrayRandomRisposte.pop()
+        arrayRandomRisposte.pop();
 }
 
 function confrontoA() {
     elementA.addEventListener('click', function (event) {
         event.preventDefault();
         if (elementA.textContent == questions[indicequestions].correct_answer) {
-            successi++
+            successi++;
         }
-        indiceArray++
-        controllo()
-        quiz()
+        indiceArray++;
+        controllo();
+        quiz();
     })
 
 };
@@ -258,11 +257,11 @@ function confrontoB() {
     elementB.addEventListener('click', function (event) {
         event.preventDefault();
         if (elementB.textContent == questions[indicequestions].correct_answer) {
-            successi++
+            successi++;
         }
-        indiceArray++
-        controllo()
-        quiz()
+        indiceArray++;
+        controllo();
+        quiz();
     })
 
 };
@@ -271,35 +270,35 @@ function confrontoC() {
     elementC.addEventListener('click', function (event) {
         event.preventDefault()
         if (elementC.textContent == questions[indicequestions].correct_answer) {
-            successi++
+            successi++;
         }
-        indiceArray++
-        controllo()
-        quiz()
+        indiceArray++;
+        controllo();
+        quiz();
     })
 
 };
 
 function confrontoD() {
     elementD.addEventListener('click', function (event) {
-        event.preventDefault()
+        event.preventDefault();
         if (elementD.textContent == questions[indicequestions].correct_answer) {
-            successi++
+            successi++;
         }
-        indiceArray++
-        controllo()
-        quiz()
+        indiceArray++;
+        controllo();
+        quiz();
     })
 
 };
 
 
 function fine() {
-    indiceDomanda++
+    indiceDomanda++;
 }
 
 function indicizzazione() {
-    indicequestions = arrayRandomIndici[0]
+    indicequestions = arrayRandomIndici[0];
 }
 
 function controllo() {
@@ -308,7 +307,7 @@ function controllo() {
         localStorage.setItem('indicedomande', indiceDomanda);
         location.href = ('../../result.html');
     }
-    console.log('esatte: ' + successi)
+    console.log('esatte: ' + successi);
 }
 
 function progressi() {
