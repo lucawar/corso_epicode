@@ -15,29 +15,24 @@
 </head>
 
 <body>
-    <div id="container">
-        <header>
-            <div class="primaSezione">
-                <img src="./assets/img/logo.svg" alt="logo del blog" width="250" height="60">
-            </div>
-            <div class="primaSezione">
-                <p>Epicode - Il blog dei developers</p>
-            </div>
-            <div class="primaSezione">
-                <nav>
-                    <ul>
-                        <li><a href="index.html" title="Home Page">Home</a></li>
-                        <li><a href="articoli.html" title="Elenco degli articoli tecnici pubblicati">Articoli</a></li>
-                        <li><a href="contatti.html" title="Candidati inviando un tuo cv">Job</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <header>
+        <div class="primaSezione">
+            <img src="./assets/img/logo.svg" alt="logo del blog" width="250" height="60">
+            <p>Epicode - Il blog dei developers</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Home Page">Home</a></li>
+                <li><a href="articoli.html" title="Elenco degli articoli tecnici pubblicati">Articoli</a></li>
+                <li><a href="contatti.html" title="Candidati inviando un tuo cv">Job</a></li>
+            </ul>
+        </nav>
 
-        </header>
-    </div>
+    </header>
     <hr>
 
     <main>
+        <span id="titlePrint">EPICODE - IL BLOG DEI DEVELOPERS</span>
         <article>
             <h1>Come creare un template per i post</h1>
             <p><i class="fas fa-pen-square"></i> di Mario Rossi - <span><i class="fas fa-clock"></i> pubblicato il
@@ -111,29 +106,27 @@
                 ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come
                 loro:</p>
 
-            <div id="sezioneVideo">
-                <iframe width="300" height="300" src="https://www.youtube.com/embed/dvOvHXruEDM"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <iframe width="300" height="300" src="https://www.youtube.com/embed/dvOvHXruEDM"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
 
-                <section>
-                    <h2>Novità</h2>
-                    <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+            <section>
+                <h2>Novità</h2>
+                <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
 
-                    <form method="POST" action="elabora_form.php">
-                        <fieldset>
-                            <input type="email" name="user_email" id="user_email" placeholder="inserisci l'email"
-                                required>
-                            <button type="submit">Iscriviti!</button>
-                        </fieldset>
-                    </form>
-                </section>
-            </div>
+                <form method="POST" action="elabora_form.php">
+                    <fieldset>
+                        <input type="email" name="user_email" id="user_email" placeholder="inserisci l'email" required>
+                        <button type="submit">Iscriviti!</button>
+                    </fieldset>
+                </form>
+            </section>
+
         </article>
         <aside>
-       <h2>Articoli correlati</h2>
-            <div class="articoli">
+            <h2>Articoli correlati</h2>
+            <div>
                 <a href="post2.html"
                     title="Passaggi guidati per validare correttamente tutto il codice sviluppato">Validare il codice
                     HTML</a>
@@ -141,7 +134,7 @@
                 <p><i class="fas fa-calendar-alt"></i> Data: 18-9-2020</p>
             </div>
 
-            <div class="articoli">
+            <div>
                 <a href="post3.html"
                     title="Passaggi guidati per controllare e correggere tutto il codice sviluppato">Correggere la
                     sintassi</a>
@@ -149,7 +142,7 @@
                 <p><i class="fas fa-calendar-alt"></i> Data: 16-9-2020</p>
             </div>
 
-            <div class="articoli">
+            <div>
                 <a href="post4.html" title="Consigli ed approcci per ridurre il peso della pagina">Meno Kb nella
                     pagina</a>
                 <p><i class="fas fa-tag"></i> Categoria: ottimizzazione</p>
