@@ -1,0 +1,76 @@
+/*-----CSS CARD----- */
+
+.card img{
+ border-top-left-radius: 100px;
+ border-top-right-radius: 100px;
+}
+
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    height: 350px;
+  }
+
+.card section {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    background-color: #FBF7E3;
+    color: #6B300F;
+    font-size: 1,5em;
+    border-bottom-left-radius: 100px;
+ border-bottom-right-radius: 100px;
+  }
+
+
+  .card button {
+    width:120px;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    background-color: #F3DF85;
+    color: #6B300F;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+  }
+
+
+/*-----CSS NAVBAR----- */
+#main-nav{
+    background-color: #FBF7E3;
+    display: flex;
+    justify-content: space-evenly;
+   border-radius: 70px;
+}
+#main-nav ul{
+    display: flex;
+}
+
+#main-nav ul li {
+    background-color: #F3DF85;
+    color: #6B300F;
+    border-radius: 1em;
+    padding: 3px 10px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    
+  }
+
+  #main-nav form button img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+
+  }
+
+  #logoButton{
+    height: fit-content;
+  }
+
+    
