@@ -1,0 +1,211 @@
+
+html ,body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: "Spectral", serif;
+}
+
+/*-----NAVBAR-----*/
+nav {
+  background-color: #ffc017;
+  padding-left: 30px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid #191919;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  font-weight: bold;
+}
+
+.nav-item a {
+  display: flex;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item:hover {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.nav-item-button {
+  border: solid 2px #191919;
+  background-color: #191919;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.nav-item-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 175px;
+  vertical-align: middle;
+}
+
+/*-----STELLE-----*/
+
+.invisible{
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#main-div {
+  border: 2px solid #191919;
+  background-color: #ffc017;
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  line-height: 1;
+}
+
+#main-div button {
+  border: solid 2px #191919;
+  background-color: #191919;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  width: 300px;
+  font-size: large;
+}
+
+#main-div button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #191919;
+}
+
+/*-----MAIN CARD----*/
+h1 {
+  font-weight: bold;
+  font-size: 7em;
+}
+
+#main-div p {
+  font-size: 2em;
+}
+
+#img-tranding {
+  width: 40px;
+}
+
+#sottotitolo{
+  margin-left: 140px;
+}
+
+span {
+  color: gray;
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+#card{
+  display: flex;
+  flex-wrap: wrap;
+flex-direction: column;
+width: 23.3%;
+height: 300px;
+}
+
+#card .img-tonda {
+  border-radius: 100px;
+}
+
+#card .img-quadrata {
+  border-radius: 10px;
+}
+
+#in {
+  color: gray;
+  font-size: smaller;
+}
+
+.p-date {
+  font-weight: bold;
+  color: gray;
+  font-size: 20px;
+}
+
+.contenitore-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/*-----MAIN ARTICOLO-----*/
+
+.articolo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 150px;
+  line-height: 1;
+}
+.articolo button {
+  background-color: gainsboro;
+  color: gray;
+  border: none;
+  padding: 8px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+#contenitore{
+  display: flex;
+ margin-top: 80px;
+}
+article{
+  margin-top: 0;
+}
+
+#foto{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+/*MAIN-BOTTONI*/
+
+#button-section{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 100px;
+  height: 300px;
+  width: 500px;
+}
+
+#button-section button{
+  border: 1px solid gainsboro;
+  color: gray;
+  margin: 10px;
+  padding: 10px;
+}
+
+#button-section button:hover{
+cursor: pointer;
+background-color: #ffc017;
+color: #191919;
+}
+
+/*
+#info{
+display: flex;
+flex-direction: column;
+color: gray;
+}
+*/

@@ -1,76 +1,181 @@
 /*-----CSS CARD----- */
-
-.card img{
- border-top-left-radius: 100px;
- border-top-right-radius: 100px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .card {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
-    height: 350px;
-  }
+  width: 15vw;
+  min-height: 300px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
 
-.card section {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    flex-direction: column;
-    flex: 1;
-    text-align: center;
-    background-color: #FBF7E3;
-    color: #6B300F;
-    font-size: 1,5em;
-    border-bottom-left-radius: 100px;
- border-bottom-right-radius: 100px;
-  }
+.card img {
+  object-fit: cover;
+  max-width: 100%;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
 
+.card .info {
+  background-color: #fef7e2;
+  padding: 0 10px 10px;
+  box-sizing: border-box;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 120px;
+  color: #6b300f;
+}
 
-  .card button {
-    width:120px;
-    margin-bottom: 10px;
-    padding: 5px 15px;
-    background-color: #F3DF85;
-    color: #6B300F;
-    border: none;
-    border-radius: 30px;
-    font-weight: bold;
-  }
+.card div {
+  width: 100%;
+}
+.info .data {
+  flex: 2 0 66%;
+  display: flex;
+  align-items: center;
+}
 
+.data .name {
+  flex: 2 0 66%;
+  text-align: center;
+}
+
+.name .main {
+  font-weight: bold;
+}
+
+.data .price {
+  flex: 1 0 33%;
+  text-align: center;
+}
+
+.info .addCarta {
+  flex: 1 0 33%;
+  text-align: center;
+}
+.addCarta button {
+  width: 120px;
+  margin-bottom: 10px;
+  padding: 5px 15px;
+  background-color: #f3df85;
+  color: #6b300f;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
 
 /*-----CSS NAVBAR----- */
-#main-nav{
-    background-color: #FBF7E3;
-    display: flex;
-    justify-content: space-evenly;
-   border-radius: 70px;
+#main-nav {
+  background-color: #fbf7e3;
+  display: flex;
+  border-radius: 70px;
+  padding: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
 }
-#main-nav ul{
-    display: flex;
+
+#main-nav div {
+  background-color: #f3df85;
+  border-radius: 2em;
+  padding: 20px;
+  font-weight: bold;
+  display: flex;
 }
 
-#main-nav ul li {
-    background-color: #F3DF85;
-    color: #6B300F;
-    border-radius: 1em;
-    padding: 3px 10px;
-    font-size: 1em;
-    font-weight: bold;
-    text-align: center;
-    list-style-type: none;
-    display: flex;
-    
+.small-button {
+  color: #6b300f;
+}
+
+#main-nav img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin-right: 20px;
+}
+
+.big-button {
+  color: #6b300f;
+  font-size: large;
+}
+
+/*-----CSS DEKSTOP-----*/
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#desk-main-nav {
+  background-color: #fbf7e3;
+  display: flex;
+  border-radius: 70px;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#desk-main-nav div {
+  background-color: #f3df85;
+  border-radius: 2em;
+  padding: 20px;
+  font-weight: bold;
+  display: flex;
+}
+
+.desk-small-button {
+  color: #6b300f;
+}
+
+#desk-main-nav img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin-right: 20px;
+}
+
+.desk-big-button {
+  color: #6b300f;
+  font-size: large;
+}
+
+#main-card {
+  display: flex;
+  flex-direction: row;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 30px;
+  background-color: #fef7e2;
+  border-radius: 30px;
+  padding: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+article .article__text {
+  flex: 1 1 200px;
+  line-height: 1.4;
+}
+
+article img {
+  flex: 1 1 500px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+h2,h3{
+  color: #6b300f;
+  font-size: xx-large;
+  font-weight: bold;
   }
 
-  #main-nav form button img{
-    width: 50px;
-    height: 50px;
-    display: flex;
-
-  }
-
-  #logoButton{
-    height: fit-content;
-  }
-
-    
+  
