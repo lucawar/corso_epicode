@@ -35,14 +35,18 @@
         </ul>
       </nav>
 
+<div id="contenitore-stelle">
+
      <div id="main-div">
         <h1>Stay curious.</h1>
-        
         <p>
           Discover stories, thinking, and experties<br />
           from writers on any topic.
         </p>
-        <a href="https://medium.com/"><button>Start reading</button></a>                                    <!--Ho inserito l svg nell'header, funziona, ma mi distrugge la sezione gialla, ho provato di tutto per adattarlo,ma non ci sono riuscito :(-->
+        <a href="https://medium.com/"><button>Start reading</button></a>
+     </div>
+
+        <div id="stelle-svg">                        <!--Ho trovato la soluzione, dovevo solo usare flexbox:)-->
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 585 462" width="600" height="300"
           preserveAspectRatio="xMidYMid meet"
           style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
@@ -5279,7 +5283,9 @@
               </g>
           </g>
       </svg>
-      </div>
+    </div> 
+
+</div>
     </header>
 
     <main>
@@ -5504,7 +5510,7 @@
           <img src="assets/imgs/image18.jpeg" alt="" />
           <img src="assets/imgs/image20.jpg" alt="" />
         </div>
-
+     <div id="contenitore-bottone">
         <div id="button-section">
           <button>Programming</button>
           <button>Data Science</button>
@@ -5517,7 +5523,8 @@
           <button>Politics</button>
         </div>
 
-      <!--
+     <hr>
+
         <div id="info">
           <div>Help</div>
           <div>Status</div>
@@ -5529,7 +5536,7 @@
           <div>About</div>
           <div>Knowable</div>
         </div>
-      -->
+   </div>
       </div>
     </main>
 
