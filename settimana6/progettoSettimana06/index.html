@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progetto settimana 06</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+
+     <header>
+<!---------NAVBAR--------->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img src="assets/imgs/logo.svg" alt="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <strong>Browse</strong>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <strong>Landing</strong>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <strong>Pages</strong>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <strong>Accounts</strong>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="icons w-25 text-end">
+              <i class="bi bi-bell m-3 mt-2 icona-navbar"></i>
+              <img class="avatar-rotondo" src="assets/imgs/avatar-1.jpg"  alt="avatar-1">
+            </div>
+
+          </div>
+        </div>
+      </nav>
+
+     </header>
+
+     <main>
+
+<!---------HERO-SECTION--------->
+<section class="container-fluid mb-3 hero">
+  <div class="row g-0">
+      <div class="col-md-8">
+      <div class="testo-hero">
+        <h1>Welcome Web Students!</h1>
+        <h6>Hand-picked Instructor and expertly crafted<br>
+        courses,designed for the modern students and<br>
+        entrepreneur</h6>
+        <div>
+          <button class="btn-hero1">Browse Courses</button>
+          <button class="btn-hero2">Are You instructor ?</button>
+          </div>
+      </div>
+    </div> 
+     <div class="col-md-4">
+      <img src="assets/imgs/hero-img.png" class="img-fluid rounded-start" alt="logo-hero">
+    </div>
+  </div>
+</section>
+
+ 
+  <div class="row container-fluid p-3">
+  <div class="d-flex justify-content-center col-12 col-md-4 align-items-center">
+  <div class="mx-3">
+  <i class="bi bi-camera-video icona-hero-b"></i>
+  </div>
+  <div>
+  <h5>30.000 online courses</h5>
+  <p>Enjoy a variety of fresh topics</p>
+</div>
+</div>
+<div class="d-flex justify-content-center col-12 col-md-4 align-items-center">
+<div class="mx-3">
+  <i class="bi bi-person icona-hero-b"></i>
+</div>
+<div>
+  <h5>Expert instruction</h5>
+  <p>Find the right instructor for you</p>
+</div>
+</div>
+<div class="d-flex justify-content-center col-12 col-md-4 align-items-center">
+<div class="mx-3">
+  <i class="bi bi-clock icona-hero-b"></i>
+</div>
+<div>
+  <h5>Lifetime access</h5>
+  <p>Learn on your shedule</p>
+</div>
+</div>
+</div>
+
+
+<!---------CARD--------->
+<div class="bg-section">
+<div class="my-5 container" id="week-deal"> 
+  <h3>Reccomended to you</h3>
+  <div class="row g-2 g-md-3 g-xl-5">
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="card border-0 shadow">
+              <img src="assets/imgs/course-graphql.jpg"
+                  class="card-img-top" alt="graphQL" />
+              <div class="card-body">
+                  <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
+                  <p class="card-text">
+                    <i class="bi bi-clock"></i> 2h 40m <i class="bi bi-bar-chart-fill"></i> Advance
+                  </p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i> 2.5 (1,500)
+                  <h5>$500 <s>$600</s></h5>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <img class="avatar-rotondo" src="assets/imgs/avatar-5.jpg" alt="avatar-5"> Brook Simmons </div>
+                      <div>
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="card border-0 shadow">
+              <img src="assets/imgs/course-javascript.jpg"
+                  class="card-img-top" alt="JavaScript" />
+              <div class="card-body">
+                  <h5 class="card-title">A Complete Beginner's Guide to JavaScript</h5>
+                  <p class="card-text">
+                    <i class="bi bi-clock"></i> 4h 10m <i class="bi bi-bar-chart-fill"></i> Advance
+                  </p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i> 3.5 (7,500)
+                  <h5>$700 <s>$850</s></h5>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <img class="avatar-rotondo" src="assets/imgs/avatar-1.jpg" alt="avatar-1"> Jenny Wilson </div>
+                      <div>
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="card border-0 shadow">
+              <img src="assets/imgs/course-node.jpg"
+                  class="card-img-top" alt="Node" />
+              <div class="card-body">
+                  <h5 class="card-title">Beginning Node.js, Express & MongoDB Development</h5>
+                  <p class="card-text">
+                    <i class="bi bi-clock"></i> 2h 00m <i class="bi bi-bar-chart"></i> Intermediate
+                  </p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i> 4.0 (15,700)
+                  <h5>$800 <s>$950</s></h5>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <img class="avatar-rotondo" src="assets/imgs/avatar-3.jpg" alt="avatar-3"> Sina Ray </div>
+                      <div>
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="card border-0 shadow">
+              <img src="assets/imgs/course-laravel.jpg"
+                  class="card-img-top" alt="Laravel" />
+              <div class="card-body">
+                  <h5 class="card-title">Laravel: The Ultimate Beginner's Guide to Learn</h5>
+                  <p class="card-text">
+                    <i class="bi bi-clock"></i> 1h 00m <i class="bi bi-bar-chart"></i> Beginner
+                  </p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i> 4.5 (2,500)
+                  <h5>$170 <s>$220</s></h5>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <img class="avatar-rotondo" src="assets/imgs/avatar-7.jpg" alt="avatar-7"> Sobo Rikhan </div>
+                      <div>
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+</div>
+
+<section class="my-5 container" id="week-deal"> 
+  <h3>Most Popular</h3>
+  <div class="row g-2 g-md-3 g-xl-5">
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="card border-0 shadow">
+              <img src="assets/imgs/course-html.jpg"
+                  class="card-img-top" alt="html" />
+              <div class="card-body">
+                  <h5 class="card-title">HTML Full Course - Build a Website Tutorial</h5>
+                  <p class="card-text">
+                    <i class="bi bi-clock"></i> 3h 16m <i class="bi bi-bar-chart"></i> Beginner
+                  </p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"> </i> 3.0 (1,600)
+                  <h5>$550 <s>$700</s></h5>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <img class="avatar-rotondo" src="assets/imgs/avatar-4.jpg" alt="avatar-4"> Miston Wilson </div>
+                      <div>
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="card border-0 shadow">
+              <img src="assets/imgs/course-javascript.jpg"
+                  class="card-img-top" alt="JavaScript" />
+              <div class="card-body">
+                  <h5 class="card-title">A Complete Beginner's Guide to JavaScript</h5>
+                  <p class="card-text">
+                    <i class="bi bi-clock"></i> 4h 10m <i class="bi bi-bar-chart-fill"></i> Advance
+                  </p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i> 3.5 (7,500)
+                  <h5>$700 <s>$850</s></h5>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <img class="avatar-rotondo" src="assets/imgs/avatar-1.jpg" alt="avatar-1"> Jenny Wilson </div>
+                      <div>
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="card border-0 shadow">
+              <img src="assets/imgs/course-node.jpg"
+                  class="card-img-top" alt="Node" />
+              <div class="card-body">
+                  <h5 class="card-title">Beginning Node.js, Express & MongoDB Development</h5>
+                  <p class="card-text">
+                    <i class="bi bi-clock"></i> 2h 00m <i class="bi bi-bar-chart"></i> Intermediate
+                  </p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"> </i> 4.0 (15,700)
+                  <h5>$800 <s>$950</s></h5>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <img class="avatar-rotondo" src="assets/imgs/avatar-3.jpg" alt="avatar-3"> Sina Ray </div>
+                      <div>
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="card border-0 shadow">
+              <img src="assets/imgs/course-react.jpg"
+                  class="card-img-top" alt="react" />
+              <div class="card-body">
+                  <h5 class="card-title">How to easily create a website with React</h5>
+                  <p class="card-text">
+                    <i class="bi bi-clock"></i> 3h 55m <i class="bi bi-bar-chart-fill"></i> Advance
+                  </p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i> 4.5 (1500)
+                  <h5>$600 <s>$750</s></h5>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <img class="avatar-rotondo" src="assets/imgs/avatar-2.jpg" alt="avatar-2"> April Noms </div>
+                      <div>
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="my-5 container" id="week-deal"> 
+  <h3>Trending</h3>
+  <div class="row g-2 g-md-3 g-xl-5">
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="card border-0 shadow">
+              <img src="assets/imgs/course-gatsby.jpg"
+                  class="card-img-top" alt="gatsby" />
+              <div class="card-body">
+                  <h5 class="card-title">Revolutionize how you build the web</h5>
+                  <p class="card-text">
+                    <i class="bi bi-clock"></i> 1h 46m <i class="bi bi-bar-chart"></i> Intermediate
+                  </p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i> 2.0 (16,500)
+                  <h5>$800 <s>$850</s></h5>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <img class="avatar-rotondo" src="assets/imgs/avatar-6.jpg" alt="avatar-6"> Jenny Wilson </div>
+                      <div>
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="card border-0 shadow">
+              <img src="assets/imgs/course-html.jpg"
+                  class="card-img-top" alt="html" />
+              <div class="card-body">
+                  <h5 class="card-title">HTML Full Course - Build a Website Tutorial</h5>
+                  <p class="card-text">
+                    <i class="bi bi-clock"></i> 3h 16m <i class="bi bi-bar-chart"></i> Beginners
+                  </p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"> </i> 3.0 (1,600)
+                  <h5>$550 <s>$700</s></h5>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <img class="avatar-rotondo" src="assets/imgs/avatar-4.jpg" alt="avatar-4"> Minston Wilson </div>
+                      <div>
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="card border-0 shadow">
+              <img src="assets/imgs/course-node.jpg"
+                  class="card-img-top" alt="Node" />
+              <div class="card-body">
+                  <h5 class="card-title">Beginning Node.js, Express & MongoDB Development</h5>
+                  <p class="card-text">
+                    <i class="bi bi-clock"></i> 2h 00m <i class="bi bi-bar-chart"></i> Intermediate
+                  </p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i> 4.0 (15,700)
+                  <h5>$800 <s>$950</s></h5>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <img class="avatar-rotondo" src="assets/imgs/avatar-3.jpg" alt="avatar-3"> Sina Ray </div>
+                      <div>
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="card border-0 shadow">
+              <img src="assets/imgs/course-laravel.jpg"
+                  class="card-img-top" alt="Laravel" />
+              <div class="card-body">
+                  <h5 class="card-title">Laravel: The Ultimate beginner's Guide to Learn</h5>
+                  <p class="card-text">
+                    <i class="bi bi-clock"></i> 1h 00m <i class="bi bi-bar-chart"> Beginner</i>
+                  </p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i> 4.5 (2,500)
+                  <h5>$170 <s>$220</s></h5>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                  <div>
+                    <img class="avatar-rotondo" src="assets/imgs/avatar-7.jpg" alt="avatar-7"> Sobo Rikhan </div>
+                    <div>
+                      <i class="bi bi-bookmark"></i>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+</div>
+</main>
+
+ <!---------FOOTER--------->
+     <footer class="container-fluid d-flex justify-content-evenly p-4"> 
+    <div>
+       <div class="text-secondary">© 2022 Geeks.All Rights Reserved</div>
+      </div>
+      <div class="row justify-content-between">
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3">Privacy</div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3">Terms</div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3">feed</div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3">Support</div>
+      </div>
+     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+  </body>
+</html>
