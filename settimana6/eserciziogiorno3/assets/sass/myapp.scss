@@ -1,0 +1,40 @@
+@import "./mixin";
+$colore-sfondo: rgb(216, 22, 22);
+$colore-testo: yellow;
+$padding-size: 1em;
+$margin-top: 2em;
+
+header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: $colore-sfondo; 
+   padding: $padding-size;
+}
+
+
+button{
+    @include myButton($colore-sfondo);
+    width: max-content;
+    padding: 2em;
+}
+
+.headline{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    background-color: $colore-testo; 
+    margin-top: $padding-size;
+}
+
+h2{
+    background-color: $colore-sfondo; 
+    padding: $padding-size;
+}
+
+.container{
+    display: flex;
+}
+
+
