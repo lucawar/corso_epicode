@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>esercizio giorno 2-LOCAL STORAGE</title>
+    <style>
+        #button-container{
+            display:flex;
+            padding-top: 1em;
+        }
+
+        #save-button, #clear-button{
+             background-color: darkgoldenrod;
+             padding: 1em;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>SALVA NOME</h2>
+      <form>
+        <div>
+          <input placeholder="Nome" id="name" />
+        </div>
+        <div id="button-container">
+          <div>
+            <button id="save-button">SALVA NOME</button>
+          </div>
+          <div>
+            <button id="clear-button">CANCELLA NOME</button>
+          </div>
+        </div>
+      </form>
+      <h3>NOME SALVATO</h3>
+      <ul></ul>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
