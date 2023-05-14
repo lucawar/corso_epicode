@@ -1,0 +1,31 @@
+img {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+  
+ h1{
+    text-align: center;
+    padding: 1em;
+    color: blue;
+    font-size: 60px;
+  font-weight: 900;
+  text-shadow: 1px 1px 2px azure, 0 0 1em blue, 0 0 0.2em blue;
+  background: -webkit-linear-gradient(top, rgba(206,219,233,1) 0%,rgba(97,153,199,1) 9%,rgba(97,153,199,1) 9%,rgba(170,197,222,1) 17%,rgba(58,132,195,1) 51%,rgba(65,154,214,1) 59%,rgba(75,184,240,1) 71%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%);
+ }
+
+ .card:hover{
+    cursor: pointer;
+    font-size: large;
+ }
+
+ .bottone-dettagli{
+    margin-bottom: 1em;
+ }
+
+
+.description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
