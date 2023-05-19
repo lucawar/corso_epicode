@@ -53,30 +53,27 @@ img {
 }
 
 .barra2 {
-  overflow: Auto;
+  overflow: scroll;
   overflow-x: hidden;
-  color: white;
   width: 100%;
-  height: 1000px;
-  margin: 0px;
+  height: 2000px;
+  margin: 0;
   padding: 0;
   scrollbar-base-color: rgb(0%, 0%, 0%);
   scrollbar-arrow-color: rgb(23, 23, 23);
   scrollbar-track-color: rgb(23, 23, 23);
 }
 
-
-
 .hero-section {
   padding-left: 10rem;
 }
 
-#albumTitle2{
-  font-size: 7em;
+.section-centrale {
+  margin-bottom: 7em;
 }
 
-.btn-hero{
-  background-color: #0A0A0A;
+.btn-hero {
+  background-color: #0a0a0a;
   border: none;
   color: white;
   border-radius: 10px;
@@ -84,20 +81,20 @@ img {
   opacity: 0.8;
 }
 
+.play-hero {
+  background-color: rgb(30, 215, 96);
+}
+
+.play-hero:hover {
+  background-color: rgb(85, 211, 129);
+}
+
 .hero-scritte {
-  background: -webkit-linear-gradient(
-    top,
-    rgba(71, 71, 71, 1) -1%,
-    rgba(71, 71, 71, 1) -1%,
-    rgba(76, 76, 76, 1) 0%,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(19, 19, 19, 1) 0%,
-    rgba(71, 71, 71, 1) 0%,
-    rgba(102, 102, 102, 1) 0%,
-    rgba(89, 89, 89, 1) 0%,
-    rgba(0, 0, 0, 1) 31%,
-    rgba(17, 17, 17, 1) 100%,
-    rgba(43, 43, 43, 1) 100%
+  background: rgb(10, 10, 10);
+  background: linear-gradient(
+    34deg,
+    rgba(10, 10, 10, 1) 24%,
+    rgba(24, 24, 24, 1) 100%
   );
 }
 
@@ -127,8 +124,22 @@ p {
   background-color: rgb(0%, 0%, 0%);
 }
 
-.colore-sfondo2{
+.colore-sfondo2 {
   background-color: #181818;
+}
+
+.colore-sfondo3 {
+  background: rgb(10, 10, 10);
+  background: linear-gradient(
+    0deg,
+    rgba(10, 10, 10, 1) 53%,
+    rgba(14, 14, 14, 1) 85%,
+    rgba(24, 24, 24, 1) 100%
+  );
+}
+
+.album-container {
+  margin-bottom: 2em;
 }
 
 .album-sfondo {
@@ -180,12 +191,28 @@ p {
   display: none;
 }
 
+.cards-album {
+  background-color: #121212;
+}
+
+.cardsAlbum:nth-last-child(1) {
+  display: none;
+}
+
 .cardArtist {
-  width: 30%;
+  height: 140px;
+}
+
+.card-artist {
+  background-color: #2c2c2c;
 }
 
 .btn-artist {
   background-color: rgb(30, 215, 96);
+  display: none;
+  position: absolute;
+  top: 95px;
+  left: 390px;
 }
 
 .container-card {
@@ -194,17 +221,19 @@ p {
 
 .btn-album {
   background-color: rgb(30, 215, 96);
-
+  display: none;
+  position: absolute;
+  top: 240px;
+  left: 250px;
 }
 
- .play-btn {
+.container-card:hover .play-btn {
   display: block;
   border-radius: 50%;
   width: 55px;
   height: 55px;
   padding: 0;
   border: 0;
-  position: relative;
 }
 
 .btn-artist:hover {
@@ -228,14 +257,16 @@ p {
   left: 11px;
 }
 
-.bi-play-fill {
-  font-size: 40px;
-  color: black;
-  text-align: center;
+
+::-webkit-input-placeholder { 
+  color: white;
 }
-.btn-artist:hover {
-  background-color: rgb(91, 236, 142);
+::-moz-placeholder { 
+  color: white;
 }
-.btn-artist {
-  background-color: rgb(30, 215, 96);
+:-ms-input-placeholder { 
+  color: white;
+}
+:-moz-placeholder { 
+  color: white;
 }
