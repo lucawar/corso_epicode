@@ -1,9 +1,9 @@
 "use strict";
 //CREO CLASSE E IMPLEMENTO L'INTERFACCIA
 class User {
-    constructor(numeroRicarica, numeroChiamate) {
-        this.numeroRicarica = numeroRicarica;
-        this.numeroChiamate = numeroChiamate;
+    constructor(_numeroRicarica, _numeroChiamate) {
+        this.numeroRicarica = _numeroRicarica;
+        this.numeroChiamate = _numeroChiamate;
     }
     //ASSEGNO METODI ALLA CLASSE
     ricarica(unaRicarica) {

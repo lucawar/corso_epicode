@@ -16,9 +16,9 @@ interface Smartphone {
     public numeroRicarica: number
     public numeroChiamate: number 
   
-    constructor(numeroRicarica: number, numeroChiamate: number) {
-      this.numeroRicarica = numeroRicarica;
-      this.numeroChiamate = numeroChiamate;
+    constructor(_numeroRicarica: number, _numeroChiamate: number) {
+      this.numeroRicarica = _numeroRicarica;
+      this.numeroChiamate = _numeroChiamate;
     }
 
 //ASSEGNO METODI ALLA CLASSE
