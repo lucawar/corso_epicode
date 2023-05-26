@@ -67,6 +67,7 @@ interface Smartphone {
   console.log("-------------------------")
   secondUser.ricarica(100)
   secondUser.chiamata(40.3)
+  secondUser.chiamata(30.3)
   console.log(`CREDITO RESIDUO : ${secondUser.numero404()}`);
   console.log(`NUMERO CHIAMATE : ${secondUser.getNumeroChiamata()} `);
   secondUser.azzeraChiamate()
@@ -79,7 +80,9 @@ interface Smartphone {
   console.log("TERZO UTENTE")
   console.log("-------------------------")
   thirdUser.ricarica(35)
+  thirdUser.chiamata(20)
   thirdUser.chiamata(10)
+  thirdUser.chiamata(5)
   console.log(`CREDITO RESIDUO : ${thirdUser.numero404()}`);
   console.log(`NUMERO CHIAMATE : ${thirdUser.getNumeroChiamata()}`);
   thirdUser.azzeraChiamate()
